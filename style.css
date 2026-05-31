@@ -1,0 +1,146 @@
+:root {
+  --fg: #1a1a1a;
+  --fg-muted: #555;
+  --bg: #fafaf7;
+  --accent: #1f6feb;
+  --rule: #e3e3df;
+  --max-width: 36rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #ececec;
+    --fg-muted: #a0a0a0;
+    --bg: #14161a;
+    --accent: #79b8ff;
+    --rule: #2a2d33;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.25rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 2.5rem 0 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 2rem 0 0.5rem;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1rem;
+}
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+/* Landing page */
+.landing header {
+  margin-bottom: 2rem;
+}
+
+.landing .tagline {
+  color: var(--fg-muted);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.landing .links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.landing .links li {
+  margin-bottom: 0.5rem;
+}
+
+.landing footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--fg-muted);
+  font-size: 0.9rem;
+}
+
+.landing footer p {
+  margin: 0;
+}
+
+/* Legal pages */
+.legal .meta {
+  color: var(--fg-muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.legal .back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+}
+
+.legal h1 {
+  margin-bottom: 0.5rem;
+}
